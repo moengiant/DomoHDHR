@@ -1,0 +1,21 @@
+HDHomerunIcons.py
+Install any modules needed using pip 
+Edit the IP on line 124 to match the IP address of the HDHomehomerun device
+This file will do a couple of things in order to get Domoticz ready in order to use the the HDHomerun.py script
+1) It will scrap the HDHomerun device and create channel icons - ChannelXXX.png, ChannelXXX48_On.png and ChannelXXX48_Off.png
+in a temp directory HDHomerun icons (XXX is the chennel number)
+2) It will import the images into the CustomImages table of the Domoticz database (A retart of Domoticz in necessary in order for the customicons to be usable the web gui)
+3) It will append the switch_icons.txt file with icon data
+4) It will move icons to the www/images directory
+
+To use check to make sure all modules needed are install in python using pip
+Place the scripts in the scritps/python directory using IDEL of run HDHomerunIcons.py 
+This will take a liitle while to run - all depends on number of channels
+
+When the scripts has finished running restart Domoticz 
+Now create a switch device for each turner - write down the idx's of the new devices
+Edit the tunerIDs list with the idx's of the devices just created
+As well edit the IP address of your HDHomerun device in the script -lines 8 and 30
+Edit the IP address and port of your Domoticz server on lines 67,70,76 and 78
+
+Now run the script to as a service and the devices will be updated when HDHomerun tuners are in use
