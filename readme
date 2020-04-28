@@ -15,14 +15,27 @@ This file will do a couple of things in order to get Domoticz ready in order to 
 move icons to the www/images directory (XXX is the channel number)
 
 2) It will append the switch_icons.txt file with the icon data - XXXChannel;XXXChannel;XXX Channel Logo
+____________________________________________________________________________________________________________________
 
+script_time_HDHomerun.pyw
 
-HDHomerun.py
-
-TO USE: 
+TO USE:
+Place script in script/python 
 Create a switch device for each turner - write down the idx's of the new devices
-Edit the tunerIDs list with the idx's of the devices just created
-As well edit the IP address of your HDHomerun device in the script -lines 8 and 30
-Edit the IP address and port of your Domoticz server on lines 67,70,76 and 78
+Edit the tunerIDs list with the idx's of the devices just created on line 6
+Edit the IP address to match your HDHomerun device on lines 8 and 30
+Edit the IP address and port of your Domoticz server on lines 73,76,86 and 88
 
-Now run the script as a service or time script and the devices will be updated when HDHomerun tuners are in use
+WHAT IT DOES:
+The script will update the HDHomerun tuner devices in Domoticz with the data of any HDHomerun tuners that are in use
+____________________________________________________________________________________________________________________
+
+script_time_HDHomerun.lua
+
+TO USE:
+Place script in scripts/lua
+
+WHAT IT DOES:
+Causes the script_time_HDHomerun.pyw to be executed every minute
+
+
