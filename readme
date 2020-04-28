@@ -1,4 +1,4 @@
-HDHomerunIcons.py
+HDHomerunIconsSimple.py
 Install any modules needed using pip 
 Edit the IP on line 124 to match the IP address of the HDHomehomerun device
 This file will do a couple of things in order to get Domoticz ready in order to use the the HDHomerun.py script
