@@ -28,9 +28,9 @@ tunerIDs = ['100','101','102']
 # edit this path to the absolute path to the switch_icons.txt file 
 pathSwitchIcons = "C:/Program Files (x86)/Domoticz/www/switch_icons.txt"
 # edit the ip to match the ip of the HDHomerun device
-ipHD = "192.168.1.7"
+ipHD = "0.0.0.0"
 # edit the ip to match the ip of the Domoticz server
-ipDS = "192.168.1.2"
+ipDS = "0.0.0.0"
 # edit the port to match the port of the Domoticz server
 portDS = "8080"
 
