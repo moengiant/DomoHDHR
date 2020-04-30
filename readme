@@ -22,9 +22,11 @@ script_time_HDHomerun.pyw
 TO USE:
 Place script in script/python 
 Create a switch device for each turner - write down the idx's of the new devices
-Edit the tunerIDs list with the idx's of the devices just created on line 6
-Edit the IP address to match your HDHomerun device on lines 8 and 30
-Edit the IP address and port of your Domoticz server on lines 73,76,86 and 88
+Edit the tunerIDs list with the idx's of the devices just created on line 27
+Edit the path the the switch_icons.txt file on line 29
+Edit the IP address to match your HDHomerun device on line 31
+Edit the IP address of your Domoticz server on line 33
+Edit the port of your Domoticz server on line 35
 
 WHAT IT DOES:
 The script will update the HDHomerun tuner devices in Domoticz with the data of any HDHomerun tuners that are in use
